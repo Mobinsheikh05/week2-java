@@ -40,7 +40,7 @@ public class StudentPointsTable {
 
 <img width="1134" alt="Screenshot 2025-04-11 at 3 28 13 PM" src="https://github.com/user-attachments/assets/d6d51e3d-5e32-4706-bcb0-a34ba41d8f2a" />
 
-question 2
+ 2-
 
 ```
 // *******************************************************************
@@ -83,5 +83,95 @@ public class Average
 ```
 <img width="1134" alt="Screenshot 2025-04-11 at 3 33 00 PM" src="https://github.com/user-attachments/assets/78f55512-8fea-4238-8ee8-43de15f660c2" />
 
-question 3
+3-
+```
+// *******************************************************************
+//   MilesToKilometers.java
+//
+//   Converts miles to kilometers based on user input
+// *******************************************************************
+
+import java.util.Scanner;
+
+public class MilesToKilometers {
+    public static void main(String[] args) {
+        final double CONVERSION_FACTOR = 1.60935;
+        double miles, kilometers;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter the distance in miles: ");
+        miles = scan.nextDouble();
+
+        kilometers = miles * CONVERSION_FACTOR;
+
+        System.out.println(miles + " miles is equal to " + kilometers + " kilometers.");
+    }
+}
+```
+<img width="1134" alt="Screenshot 2025-04-11 at 3 44 17 PM" src="https://github.com/user-attachments/assets/68d599d1-777c-4a06-8f43-bdbf974afaff" />
+
+4-
+```
+// *******************************************************************
+//   SquareCalculations.java
+//
+//   Reads the side length of a square and calculates its perimeter and area
+// *******************************************************************
+
+import java.util.Scanner;
+
+public class SquareCalculations {
+    public static void main(String[] args) {
+        int side, perimeter, area;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter the length of the square's side: ");
+        side = scan.nextInt();
+
+        perimeter = 4 * side;
+        area = side * side;
+
+        System.out.println("Perimeter of the square: " + perimeter);
+        System.out.println("Area of the square: " + area);
+    }
+}
+```
+<img width="1290" alt="Screenshot 2025-04-11 at 3 47 29 PM" src="https://github.com/user-attachments/assets/01fc2d27-2a29-45f9-8f68-d8a115217f55" />
+
+5-
+```
+// *******************************************************************
+//   Fraction.java
+//
+//   Reads numerator and denominator, then prints decimal equivalent
+// *******************************************************************
+
+import java.util.Scanner;
+
+public class Fraction {
+    public static void main(String[] args) {
+        int numerator, denominator;
+        double decimal;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter the numerator: ");
+        numerator = scan.nextInt();
+
+        System.out.print("Enter the denominator: ");
+        denominator = scan.nextInt();
+
+        // Check for division by zero
+        if (denominator == 0) {
+            System.out.println("Denominator cannot be zero.");
+        } else {
+            decimal = (double) numerator / denominator;
+            System.out.println("Decimal equivalent: " + decimal);
+        }
+    }
+}
+```
+<img width="1288" alt="Screenshot 2025-04-11 at 3 52 36 PM" src="https://github.com/user-attachments/assets/517e692a-4e6b-45ac-ae67-ca3ff16a4fce" />
 
